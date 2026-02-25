@@ -44,6 +44,7 @@ RUN ollama serve & sleep 20 && \
     ollama pull devstral-2:12b-cloud && \
     ollama pull minimax-m2.5:cloud && \
     ollama pull glm-4.7:cloud && \
+    ollama pull mistral-large-3:675b-cloud && \
     ollama pull devstral-small-2:24b-cloud && \
     ollama pull qwen3-next:80b-cloud && \
     ollama pull gpt-oss:20b-cloud && \
