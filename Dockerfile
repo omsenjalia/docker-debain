@@ -40,7 +40,8 @@ RUN ollama serve & sleep 20 && \
     ollama pull rnj-1:8b-cloud && \
     ollama pull glm-5:cloud && \
     ollama pull nemotron-3-nano:30b-cloud && \
-    ollama pull ministral-3.3b-cloud && \
+    ollama pull qwen3-coder:48b-cloud && \
+    ollama pull devstral-2:12b-cloud && \
     ollama pull minimax-m2.5:cloud && \
     ollama pull glm-4.7:cloud && \
     ollama pull devstral-small-2:24b-cloud && \
