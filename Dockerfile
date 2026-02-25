@@ -30,10 +30,10 @@ RUN npm install -g pnpm && \
 
 # 6. Bake the Models (Warning: Massive downloads ahead)
 RUN ollama serve & sleep 20 && \
-    ollama pull qwen3-coder:48b-cloud && \
+    ollama pull qwen3-coder:480b-cloud && \
     ollama pull gemma3:27b-cloud && \
     ollama pull gemini-3-flash-preview:cloud && \
-    ollama pull devstral-2:12b-cloud && \
+    ollama pull devstral-2:123b-cloud && \
     ollama pull deepseek-v3.1:671b-cloud && \
     ollama pull kimi-k2.5:cloud && \
     ollama pull qwen3-coder-next:cloud && \
