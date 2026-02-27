@@ -25,7 +25,7 @@ RUN useradd -m -s /bin/bash dev && \
 
 # 5. Install pnpm
 RUN npm install -g pnpm && \
-    pnpm config set global-bin-dir /usr/local/bin && \
+    pnpm config set global-bin-dir /usr/local/bin 
     
 
 # 6. Bake the Models (Warning: Massive downloads ahead)
