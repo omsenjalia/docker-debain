@@ -34,7 +34,7 @@ jobs:
           file: ./Dockerfile
           push: true
           # Your hardcoded tag
-          tags: ghcr.io/omsenjalia/debain-node:latest
+          tags: ghcr.io/omsenjalia/docker-debain:latest
           # Internal GitHub caching to make rebuilds take seconds
           cache-from: type=gha
           cache-to: type=gha,mode=max
