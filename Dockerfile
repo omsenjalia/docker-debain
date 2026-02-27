@@ -53,7 +53,7 @@ RUN ollama serve & sleep 20 && \
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh && \
     # Create directories first
-    mkdir -p /home/dev/.openclaw /home/dev/workspace /tmp/ollama-backups && \
+    mkdir -p /home/dev/workspace /tmp/ollama-backups && \
     # Give 'dev' ownership of the entire home directory and the backup temp folder
     chown -R dev:dev /home/dev /tmp/ollama-backups && \
     # Ensure read/write/execute permissions for the owner
