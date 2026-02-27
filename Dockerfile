@@ -23,10 +23,10 @@ RUN apt-get update && apt-get install -y \
 RUN useradd -m -s /bin/bash dev && \
     echo "dev ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-# 5. Install pnpm and OpenClaw
+# 5. Install pnpm
 RUN npm install -g pnpm && \
     pnpm config set global-bin-dir /usr/local/bin && \
-    pnpm add -g openclaw
+    
 
 # 6. Bake the Models (Warning: Massive downloads ahead)
 RUN ollama serve & sleep 20 && \
